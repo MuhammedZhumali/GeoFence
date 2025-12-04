@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Docker
+*.log
+
+# Model files (large, should be downloaded separately or stored elsewhere)
+# Uncomment if you don't want to commit model files
+# *.keras
+# exported_geofence_model/
+# backend/src/main/resources/exported_geofence_model/
+
+# Data files (large datasets)
+geo-date/
+*.plt
+
+# Environment variables
+.env
+.env.local
+
+# OS
+Thumbs.db
+

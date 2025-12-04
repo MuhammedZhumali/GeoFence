@@ -1,0 +1,29 @@
+services:
+
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+      - redis
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/geodb
+      SPRING_DATASOURCE_USERNAME: geo
+      SPRING_DATASOURCE_PASSWORD: geopass
+      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_PORT: 6379
+
+  db:
+    image: postgis/postgis:13-3.1
+    environment:
+      POSTGRES_USER: geo
+      POSTGRES_PASSWORD: geopass
+      POSTGRES_DB: geodb
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
