@@ -142,7 +142,7 @@ The model is exported as a TensorFlow SavedModel optimized for CPU inference (no
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone <repo-url>
 cd Geo-Fence
 ```
 
